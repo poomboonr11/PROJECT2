@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESIDENTIAL COMMANDO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <script src='/static/cpe.js'></script>
+    
+    <link rel='stylesheet' href='/static/main.css'>
+
+</head>
+<body>
+  <!-- FOR ADMIN -->
+  <a href="{% url 'login' %}" class="Login"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828267.png" height="45px" width="45px"></a>
+  <a href="{% url 'register' %}" class="Register"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921224.png" height="45px" width="45px"></a>
+  
+  
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner"><br></br>
+          
+          <div class="tm-site-header">
+            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Coffee Shop</h1>
+          </div>
+                  
+            </a>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                  <span>เมนูเครื่องดื่ม</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>เกี่ยวกับเรา</span>
+                </a>
+              </li>
+              
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>ติดต่อสอบถาม</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!-- Drink Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">กาแฟเย็น</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="hot">กาแฟร้อน</a>
+                </li>
+              </ul>
+            </nav>
+            
+            
+            
+<!---เมนูเย็น-->
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name" style="color: rgb(255, 227, 168);">เอสเปรสโซ่ เย็น<span class="tm-list-item-price">80 B.</span></h3>
+                    <p class="tm-list-item-description">กาแฟที่มีรสแก่และเข้ม มีวิธีการชงโดยใช้แรงอัดไอน้ำหรือน้ำร้อนผ่านเมล็ดกาแฟคั่วที่บดละเอียดและใส่น้ำแข็งลงท้าย</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name" style="color: rgb(255, 227, 168);">อเมริกาโน่ เย็น<span class="tm-list-item-price">80 B.</span></h3>
+                    <p class="tm-list-item-description">มีวิธีการชงโดยเติมน้ำร้อนผสมลงไปในเอสเปรสโซ การเจือจางเอสเปรสโซซึ่งเป็นกาแฟเข้มข้นด้วยน้ำร้อน ทำให้คัฟแฟะอาเมรีคาโนมีความแก่พอ ๆ กับกาแฟธรรมดา แต่มีกลิ่นและรสชาติที่เข้มที่มาจากเอสเปรสโซ</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name" style="color: rgb(255, 227, 168);">ลาเต้ เย็น<span class="tm-list-item-price">85 B.</span></h3>
+                    <p class="tm-list-item-description">เครื่องดื่มกาแฟที่เตรียมด้วยนมร้อน โดยเทเอสเปรสโซ และนมร้อนที่ตีด้วยไอน้ำจากเครื่องชงลงในถ้วยพร้อม ๆ กัน</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">คาปูชิโน เย็น<span class="tm-list-item-price">85 B.</span></h3>
+                    <p class="tm-list-item-description">คือการผสมผสานกาแฟเอสเปรสโซ ตีด้วยฟองนมอุ่นๆ ได้อย่างลงตัว กาแฟชนิดนี้ล้วนเป็นเรื่องขององค์ประกอบและการแยกส่วนประกอบต่างๆ ออกเป็นสามส่วนให้เท่ากัน คาปูชิโนที่รังสรรค์ออกมาสุดฝีมือนั้นจะต้องมีรสชาติเข้มข้น แต่ไม่เปรี้ยวและมีรสชาติหวานมันจากนมเล็กน้อย เพราะเราไม่ได้ผสมนมลงไปจริงๆ เอสเปรสโซจึงให้รสชาติที่เข้มข้นขึ้น</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>   
+                  </div>
+                </div> 
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">มอคค่า เย็น<span class="tm-list-item-price">90 B.</span></h3>
+                    <p class="tm-list-item-description">คือเอสเปรสโซหนึ่งช็อตผสมกับผงช็อกโกแลตหรือน้ำเชื่อม ใส่นมหรือครีม ซึ่งความแตกต่างของลาเต้ ก็คือมักจะเป็นเอสเปรสโซ 1/3 และนมอุ่น 2/3 แต่จะเพิ่มรสช็อกโกแลตและอาจเป็นนมหรือดาร์กช็อกโกแลต</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">มัคคิอาโต้ เย็น<span class="tm-list-item-price">100 B.</span></h3>
+                    <p class="tm-list-item-description">เครื่องดื่มกาแฟเอสเปรสโซ ราดฟองนมหรือนมอุ่นในปริมาณเล็กน้อย ช่วยคงให้รสชาติเอสเปรสโซโดดเด่น มัคคิอาโตเหมาะสำหรับผู้ที่คิดว่าเอสเปรสโซมีรสชาติที่เข้มเกินไป และคาปูชิโนก็อ่อนเกินไป</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>
+                  </div>
+                </div>
+                                       
+              </div>
+            </div> 
+<!---เมนูร้อน-->
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
+              
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">เอสเปรสโซ่ ร้อน<span class="tm-list-item-price">70 B.</span></h3>
+                    <p class="tm-list-item-description">กาแฟที่มีรสแก่และเข้ม มีวิธีการชงโดยใช้แรงอัดไอน้ำหรือน้ำร้อนผ่านเมล็ดกาแฟคั่วที่บดละเอียด </p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">อเมริกาโน่ ร้อน<span class="tm-list-item-price">70 B.</span></h3>
+                    <p class="tm-list-item-description">มีวิธีการชงโดยเติมน้ำร้อนผสมลงไปในเอสเปรสโซ การเจือจางเอสเปรสโซซึ่งเป็นกาแฟเข้มข้นด้วยน้ำร้อน ทำให้คัฟแฟะอาเมรีคาโนมีความแก่พอ ๆ กับกาแฟธรรมดา แต่มีกลิ่นและรสชาติที่เข้มที่มาจากเอสเปรสโซ</p> 
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>                   
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">ลาเต้ ร้อน<span class="tm-list-item-price">75 B.</span></h3>
+                    <p class="tm-list-item-description">เครื่องดื่มกาแฟที่เตรียมด้วยนมร้อน โดยเทเอสเปรสโซ และนมร้อนที่ตีด้วยไอน้ำจากเครื่องชงลงในถ้วยพร้อม ๆ กัน</p>
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">คาปูชิโน ร้อน<span class="tm-list-item-price">75 B.</span></h3>
+                    <p class="tm-list-item-description">คือการผสมผสานกาแฟเอสเปรสโซ ตีด้วยฟองนมอุ่นๆ ได้อย่างลงตัว กาแฟชนิดนี้ล้วนเป็นเรื่องขององค์ประกอบและการแยกส่วนประกอบต่างๆ ออกเป็นสามส่วนให้เท่ากัน คาปูชิโนที่รังสรรค์ออกมาสุดฝีมือนั้นจะต้องมีรสชาติเข้มข้น แต่ไม่เปรี้ยวและมีรสชาติหวานมันจากนมเล็กน้อย เพราะเราไม่ได้ผสมนมลงไปจริงๆ เอสเปรสโซจึงให้รสชาติที่เข้มข้นขึ้น</p>  
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>            
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">มอคค่า ร้อน<span class="tm-list-item-price">80 B.</span></h3>
+                    <p class="tm-list-item-description">คือเอสเปรสโซหนึ่งช็อตผสมกับผงช็อกโกแลตหรือน้ำเชื่อม ใส่นมหรือครีม ซึ่งความแตกต่างของลาเต้ ก็คือมักจะเป็นเอสเปรสโซ 1/3 และนมอุ่น 2/3 แต่จะเพิ่มรสช็อกโกแลตและอาจเป็นนมหรือดาร์กช็อกโกแลต</p>  
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>            
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"style="color: rgb(255, 227, 168);">มัคคิอาโต้ ร้อน<span class="tm-list-item-price">90 B.</span></h3>
+                    <p class="tm-list-item-description">เครื่องดื่มกาแฟเอสเปรสโซ ราดฟองนมหรือนมอุ่นในปริมาณเล็กน้อย ช่วยคงให้รสชาติเอสเปรสโซโดดเด่น มัคคิอาโตเหมาะสำหรับผู้ที่คิดว่าเอสเปรสโซมีรสชาติที่เข้มเกินไป และคาปูชิโนก็อ่อนเกินไป</p>  
+                    <div class="header-btn2" style="text-align: left;">
+                      <a href="index1" class="สั่งเลย">สั่งเลย</a>
+                  </div>            
+                  </div>
+                </div>
+                         
+              </div>
+            </div>
+          </div>
+          <!-- end หน้าเครื่องดื่ม -->
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">About Coffee Shop</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2" style="text-align: center;">
+                  <p>CoffeeShop เป็นเว็บไซต์ที่รวบรวมเครื่องดื่มกาแฟที่รสชาติกลมกล่อมและรสชาติดีที่เกิดจากกลุ่มคนรักกาแฟทำไมคุณไม่ลองสั่งดูละ!</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">ขอบคุณที่มาเยี่ยมชมเว็บไซต์ของเรานะ!</h2>
+                         
+                </div>                
+                  <img src="https://cdna.artstation.com/p/assets/images/images/042/676/328/original/leo-bryan-arief-sprite-0002.gif?1635169542" width="100px" height="100px">                
+              </div>
+              
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+         
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">ช่องทางการติดต่อ</h2>
+      
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <a href="homepage2.html" class="สั่งเลย">ส่ง</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+      
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="/static/video.mp4" type="video/mp4">
+      </video>
+  </div>
+  <!--end Background video -->
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+ 
+
+
+ 
+</body>
+</html>

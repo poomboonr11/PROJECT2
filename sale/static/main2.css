@@ -1,0 +1,181 @@
+
+ /* สีพิ้นหลังเว็บ */
+ body{
+    background-color: antiquewhite;
+ }
+  #maintable {
+    width: 100%;
+    min-width: 100%;
+    z-index: 10;
+    position: relative;
+    background-color: white;
+  }
+/* coffeeshop โลโก้ */ 
+  H1 {
+    color: rgba(255, 226, 163, 0.829);
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 100px;
+  }
+   
+  th {
+    color: rgb(0, 0, 0); /* สีหัวข้อตาราง */
+  }
+  tr:hover {background-color: wheat;}
+  tr:nth-child(even) {background-color: #f2f2f2;} /* สีพื้นหลังตาราง */
+   
+  th, td {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid rgb(0, 0, 0);
+   
+  }
+   
+  /* ออกแบบหัวข้อ */ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: antiquewhite;  
+  }
+  .login1 {
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background: #ffd028;
+    color: black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    margin-right: 30px;
+}
+  .register1{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background: #ffd028;
+    color: black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    margin-right: 30px;
+  }
+  
+  .nav2{
+    list-style-type: none;
+    margin:auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(168, 109, 0);
+    border-top: 2.5px solid rgb(0, 0, 0);
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+  }
+  
+  .สั่ง {
+    margin-left: 15px;
+    margin-top: 100px;
+    background: #2eff05;
+    color: black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    margin-right: 30px;
+}
+
+  /* H2 กับ H3 */ 
+  H2{
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  
+  H3{
+    font-size: 40px;
+    margin-top: 25px;
+  }
+  /* ปุ่มสั่งเลย */ 
+  .สั่งเลย{
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    background: #c08941;
+    color: black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    margin-right: 30px;
+  }
+   
+
+   
+ 
+  /* หัวข้อเวลาเอาเมาส์จิ้ม */ 
+ 
+   
+  
+  
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1110px;
+    margin-left: 150px;
+    color:#81401c;
+}
+header {
+    height: 1161px;
+    background: url('../img/cf.svg') no-repeat;
+    background-position: right bottom 5px;
+}
+
+
+.logo{
+    margin-right: 120px;
+}
+.logo h1{
+    color: rgb(221, 177, 94);
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.header-info {
+    margin-top: 150px;
+    width: 490px;
+   /* border: 1px solid red;*/
+}
+
+.header-title h1 {
+    font-size: 50px
+}
+.header-content p {
+    color: #81401c;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.header-btn {
+    margin-top: 30px;
+}
+.header-btn a{
+    display: inline-block;
+}
+
+/*หน้าเลือกสินค้า*/
+.สั่ง {
+    margin-left: 15px;
+    margin-top: 100px;
+    background: #2eff05;
+    color: black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    margin-right: 30px;
+}
+
+

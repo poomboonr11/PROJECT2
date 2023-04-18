@@ -1,0 +1,139 @@
+{% extends 'central_forms.html' %}
+
+{% block content %}
+
+    <br />
+    <form id='form_get' action='/customer/get' method='GET'>
+        <label>Customer Code</label>
+        <input type='text' name='customer_code' value=''>
+        <input type='submit' value='GET'>
+    </form>
+
+    <button id='btnCustomerList'>Customer List</button>
+
+        <table id='CustomerList' class="container">
+            <thead>
+                <tr>
+                    <th class='col-1'>#</th>
+                    <th class='col-2'>Customer Code</th>
+                    <th class='col-2'>Customer Name</th>
+                    <th class='col-3'>Customer Telephone</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for list in customers %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ list.customer_code }}</td>
+                        <td>{{ list.name }}</td>
+                        <td>{{ list.customer_tel }}</td>
+                        <td><input type='button' class='btnDelCustomer' value='Del'></td>
+                    <tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id='btnAddCustomer'><i class='fa fa-plus'></i></td>
+                    <form id='form_customer' action='/customer/save' method=POST>
+                        {% csrf_token %}
+
+                        <td><input type='text' id='customer_code' name='customer_code' /></td>
+                        <td><input type='text' id='customer_name' name='name' /></td>
+                        <td><input type='text' id='customer_tel' name='customer_tel' /></td>
+                        <td><input type='submit' value='Add'></td>
+                    </form>    
+                </tr>
+            </tfoot>
+        </table>
+{% endblock %}
+
+{% block script %}
+<script>
+    $(document).ready( function () {
+        $('#btnCustomerList').click(function() {
+            console.log('btnCustomerList');
+            $.ajax({
+                url:  '/customer/list',
+                type:  'get',
+                dataType:  'json',
+                success: function  (data) {
+                    let rows =  '';
+                    var i = 1;
+                    data.customers.forEach(customer => {
+                        rows += `
+                        <tr>
+                            <td>${i++}</td>
+                            <td>${customer.customer_code}</td>
+                            <td>${customer.name}</td>
+                            <td>${customer.customer_tel}</td>
+                            <td><input type='button' class='btnDelCustomer' value='Del'></td>
+                        </tr>`;
+                    });
+                    $('#CustomerList > tbody').html(rows);
+                },
+            });        
+        });
+
+        $('#btnAddCustomer').click(function() {
+            console.log('btnAddCustomer');
+            var token = $('[name=csrfmiddlewaretoken]').val();
+            $.ajax({
+                url:  '/customer/save2',
+                type:  'post',
+                data: $('#form_customer').serialize(),
+                headers: { "X-CSRFToken": token },
+                dataType:  'json',
+                success: function  (data) {
+                    let rows =  '';
+                    var i = 1;
+                    data.customers.forEach(customer => {
+                        rows += `
+                        <tr>
+                            <td>${i++}</td>
+                            <td>${customer.customer_code}</td>
+                            <td>${customer.name}</td>
+                            <td>${customer.customer_tel}</td>
+                            <td><input type='button' class='btnDelCustomer' value='Del'></td>
+                        </tr>`;
+                    });
+                    $('#CustomerList > tbody').html(rows);
+                },
+            });   
+        });
+
+        $(document).on("click", ".btnDelCustomer" , function() {
+            //console.log(this);
+            var customer_code = $(this).parents('tr').find('td:nth-child(2)').html();
+            console.log(customer_code);
+            var token = $('[name=csrfmiddlewaretoken]').val();
+            $.ajax({
+                url:  '/customer/delete',
+                type:  'post',
+                data: 'customer_code='+customer_code,
+                headers: { "X-CSRFToken": token },
+                dataType:  'json',
+                success: function  (data) {
+                    let rows =  '';
+                    var i = 1;
+                    data.customers.forEach(customer => {
+                        rows += `
+                        <tr>
+                            <td>${i++}</td>
+                            <td>${customer.customer_code}</td>
+                            <td>${customer.name}</td>
+                            <td>${customer.customer_tel}</td>
+                            <td><input type='button' class='btnDelCustomer' value='Del'></td>
+                        </tr>`;
+                    });
+                    $('#CustomerList > tbody').html(rows);
+                },
+            });
+
+        });
+
+    });
+</script>
+{% endblock %}
+</body>
+</html>

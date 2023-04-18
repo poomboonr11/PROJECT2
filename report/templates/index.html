@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Report Form</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='/static/cpe.js'></script>
+    <link rel='stylesheet' href='/static/cpe.css'>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <ul class="nav">
+        <li><a href="indexformanagement">Coffee Menu </a> 
+        <li><a href="report">Report Form</a> 
+        <li><a href="{% url 'central_forms'%}">Management for Admin</a></li>
+                  
+        
+    </ul>
+    </nav>
+    <H1>Report Form.</H1>
+    <ul class="nav">
+        <li><a href="report">Main</a></li>
+        <li><a href="ReportListAllSales">Report list all sales</a></li>
+        <li><a href="ReportListAllSalesLineItem">Report list all sales line item</a></li>
+        <li><a href="ReportListAllProducts">Report list all products</a></li>
+
+    </ul>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Management for Admin</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='/static/cpe.js'></script>
+    <link rel='stylesheet' href='/static/cpe.css'>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <ul class="nav">
+        <li><a href="indexformanagement">Coffee Menu </a> 
+        <li><a href="report">Report Form</a> 
+        <li><a href="{% url 'central_forms'%}">Management for Admin</a></li>
+                   
+    </ul>
+    </nav>
+    {% block script %}
+    {% endblock %}    
+<body>
+    <H1>Management for Admin.</H1>
+    <ul class="nav">
+        <li><a href="report">Back</a></li>
+        <li><a href="{% url 'forms_customer'%}">Management customer</a></li>
+        <li><a href="{% url 'forms_product'%}">Management product</a></li>
+        <li><a href="{% url 'forms_payment_method'%}">Management payment method</a></li>
+    </ul>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
